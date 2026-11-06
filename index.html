@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Javohir Jamoliddinov — dasturchi va dizayner</title>
+<meta name="description" content="Javohir Jamoliddinov: veb-saytlar, Python yechimlari va dizayn.">
+<meta name="theme-color" content="#f3f6f4" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0d1730" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+<meta property="og:image" content="assets/images/hero-portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="bgcode" id="bgcode" aria-hidden="true">
+<pre class="bc a"><span class="c">// javohir.js</span>
+<span class="k">const</span> javohir = {
+  role: <span class="s">"Web dasturchi"</span>,
+  focus: [<span class="s">"web"</span>, <span class="s">"kiberxavfsizlik"</span>,
+          <span class="s">"tizim administratori"</span>],
+  city: <span class="s">"Samarqand"</span>,
+  build() {
+    <span class="k">return</span> <span class="s">"g'oya → kod → mahsulot"</span>;
+  }
+};</pre>
+<pre class="bc b"><span class="c"># security.py</span>
+<span class="k">def</span> check(password):
+    <span class="k">if</span> len(password) &lt; <span class="s">12</span>:
+        <span class="k">return</span> <span class="s">"zaif"</span>
+    <span class="k">return</span> <span class="s">"yaxshi"</span>
+
+<span class="k">while</span> <span class="s">True</span>:
+    learn()
+    build()
+    repeat()</pre>
+</div>
+<div class="ring" id="ring" aria-hidden="true"></div>
+<div class="progress" id="prog" aria-hidden="true"></div>
+<header class="top">
+  <a class="logo" href="#home">Javohir Jamoliddinov</a>
+  <nav id="menu" aria-label="Asosiy menyu">
+    <a href="#about">Men haqimda</a><a href="#skills">Ko'nikmalar</a><a href="#services">Xizmatlar</a><a href="#projects">Loyihalar</a><a href="#terminal">Terminal</a><a class="pill" href="#contact">Buyurtma berish</a>
+  </nav>
+  <div class="tools">
+    <button class="kbtn" id="kbtn" type="button" aria-label="Tezkor qidiruv (Ctrl+K)"><kbd>Ctrl</kbd><kbd>K</kbd></button>
+    <button class="tbtn" id="theme" type="button" aria-label="Yorug' / qorong'i rejim"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+    <button class="tbtn burger" id="burger" type="button" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="where" id="greet">Dasturchi · Dizayner</p>
+    <h1>Veb-sayt, bot va dizaynni bir joyda qilib beraman.</h1>
+    <p class="role"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+    <p class="lead">Dasturlash, sun'iy intellekt va Figma dizaynni birlashtirib, g'oyangizni ishlaydigan mahsulotga aylantiraman.</p>
+    <div class="cta"><a class="btn" href="#contact">Loyiha haqida yozing</a><a class="btn alt" href="#projects">Ishlarimni ko'rish</a></div>
+  </div>
+  <figure class="arch"><img src="assets/images/hero-portrait.jpg" width="900" height="1200" alt="Javohir Jamoliddinov" fetchpriority="high"></figure>
+</section>
+
+<section id="about" class="sec split">
+  <img class="photo" src="assets/images/about-workspace.jpg" width="1000" height="1000" alt="Javohir Jamoliddinov" loading="lazy">
+  <div>
+    <h2>Men haqimda</h2>
+    <p>Men Javohir Jamoliddinov — dasturlash va axborot xavfsizligini birlashtirib, g'oyalarni ishlaydigan raqamli mahsulotlarga aylantiraman. Amaliy loyihalar qilish va yangi texnologiyalarni o'rganishni yaxshi ko'raman.</p>
+    <dl class="facts">
+      <div><dt>Universitet</dt><dd>Sharof Rashidov nomidagi Samarqand davlat universiteti</dd></div>
+      <div><dt>Institut</dt><dd>Sun'iy intellekt va raqamli texnologiyalar instituti</dd></div>
+      <div><dt>Yo'nalish</dt><dd>Axborot tizimlari va texnologiyalari</dd></div>
+      <div><dt>Bosqich</dt><dd>3-kurs talabasi</dd></div>
+    </dl>
+    <h3 class="sub">Faoliyat yo'nalishlari</h3>
+    <ul class="chips"><li>Web dasturlash</li><li>Kiberxavfsizlik</li><li>Tizim administratori</li><li>Kompyuter muhandisligi</li><li>Axborot xavfsizligi</li></ul>
+  </div>
+</section>
+
+<section id="terminal" class="sec">
+  <h2>Terminalda tanishing</h2>
+  <p class="hint">Quyidagi oynaga <code>help</code> deb yozing va Enter bosing.</p>
+  <div class="term" id="term">
+    <pre id="tout" aria-live="polite"></pre>
+    <label class="tin"><span>javohir@portfolio:~$</span><input id="tcmd" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Buyruq"></label>
+  </div>
+</section>
+
+<section id="lab" class="sec">
+  <h2>Kiber-laboratoriya</h2>
+  <div class="lab">
+    <div class="box">
+      <h3>Parol kuchini tekshiring</h3>
+      <p class="hint2">Parol hech qayerga yuborilmaydi: tekshiruv brauzeringizning o'zida bo'ladi.</p>
+      <input id="pw" type="password" autocomplete="off" placeholder="Parolni yozing" aria-label="Parol">
+      <label class="show"><input id="showpw" type="checkbox"> Parolni ko'rsatish</label>
+      <div class="meter" aria-hidden="true"><i id="bar"></i></div>
+      <p id="pwres" aria-live="polite"></p>
+    </div>
+    <div class="box">
+      <h3>Kunlik maslahat</h3>
+      <p id="tip" class="tip"></p>
+      <button class="btn alt" id="nexttip" type="button">Keyingi maslahat</button>
+    </div>
+    <div class="box">
+      <h3>Hash va Base64 asbobi</h3>
+      <p class="hint2">Matn yozing, natija brauzeringizning o'zida hisoblanadi.</p>
+      <select id="hmode" aria-label="Amal turi"><option value="sha256">SHA-256 hash</option><option value="sha1">SHA-1 hash</option><option value="b64e">Base64 kodlash</option><option value="b64d">Base64 dekodlash</option></select>
+      <textarea id="hin" rows="3" placeholder="Matn..." aria-label="Matn"></textarea>
+      <output id="hout" class="hout" aria-live="polite"></output>
+    </div>
+    <div class="box">
+      <h3>Kod yozish tezligi</h3>
+      <p class="hint2">Qatorni xatosiz yozing, tezligingiz hisoblanadi.</p>
+      <code id="tsnip" class="snip"></code>
+      <input id="tin" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Shu yerga yozing..." aria-label="Yozish">
+      <p id="tres" aria-live="polite"></p>
+      <button class="btn alt" id="tnext" type="button">Boshqa qator</button>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="sec">
+  <h2>Nimalar qila olaman</h2>
+  <div class="skills">
+    <div><h3>Dasturlash</h3><p>HTML, CSS, JavaScript, Python, Java, SQL</p></div>
+    <div><h3>Sun'iy intellekt</h3><p>AI vositalari bilan ishlash va kreativ kontent yaratish</p></div>
+    <div><h3>Xavfsizlik va tizimlar</h3><p>Linux, kriptografiya, kiberxavfsizlik asoslari</p></div>
+    <div><h3>Dizayn</h3><p>Figma, vizitka va taklifnoma dizayni</p></div>
+    <div><h3>Video</h3><p>CapCut, InShot, AI yordamida video</p></div>
+    <div><h3>Office</h3><p>Word, Excel, PowerPoint, Access</p></div>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <h2>Loyihalar</h2>
+  <ul class="projects" id="projects-list"></ul>
+  <div id="gh" hidden>
+    <h3 class="sub">GitHub'dagi so'nggi repozitoriylar</h3>
+    <ul class="projects" id="ghlist"></ul>
+  </div>
+</section>
+
+<section id="services" class="sec">
+  <h2>Xizmatlar</h2>
+  <div class="skills">
+    <div><h3>Veb-sayt yaratish</h3><p>Portfolio, vizitka-sayt va landing sahifalar</p></div>
+    <div><h3>Telegram botlar</h3><p>Buyurtma, so'rov va xabar qabul qiluvchi botlar</p></div>
+    <div><h3>Python yechimlari</h3><p>Kichik dasturlar va jarayonlarni avtomatlashtirish</p></div>
+    <div><h3>Interfeys dizayni</h3><p>Figma'da sayt va ilova maketlari</p></div>
+    <div><h3>Video montaj</h3><p>Qisqa videolar va AI yordamida kontent</p></div>
+    <div><h3>Ma'lumotlar bazasi</h3><p>SQL bilan hisob-kitob va ro'yxat tizimlari</p></div>
+  </div>
+</section>
+
+<section id="stack" class="sec">
+  <h2>Texnologiyalar</h2>
+  <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Java</li><li>SQL</li><li>Linux</li><li>Figma</li><li>Git</li><li>Telegram Bot API</li><li>Kiberxavfsizlik asoslari</li></ul>
+</section>
+
+<section id="process" class="sec">
+  <h2>Qanday ishlaymiz</h2>
+  <ol class="steps">
+    <li><h3>Aloqa</h3><p>Formani to'ldirasiz, so'rovingiz menga Telegramda keladi.</p></li>
+    <li><h3>Kelishuv</h3><p>Vazifa, muddat va narxni birga aniqlaymiz.</p></li>
+    <li><h3>Ishlab chiqish</h3><p>Jarayon davomida natijani ko'rsatib boraman.</p></li>
+    <li><h3>Topshirish</h3><p>Tayyor loyihani joylab, kerak bo'lsa tushuntirib beraman.</p></li>
+  </ol>
+</section>
+
+<section id="faq" class="sec">
+  <h2>Ko'p so'raladigan savollar</h2>
+  <div class="faq">
+    <details><summary>Buyurtmani qanday beraman?</summary><p>Pastdagi formani to'ldiring yoki Telegramda @Javohir_0512 ga yozing.</p></details>
+    <details><summary>Narx qanday belgilanadi?</summary><p>Loyiha hajmiga qarab. Vazifani yozib yuboring, birga kelishamiz.</p></details>
+    <details><summary>Qaysi aloqa turi qulay?</summary><p>Telegram eng tez. Forma ham to'g'ridan-to'g'ri Telegramga tushadi.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <div>
+    <h2>Loyiha haqida yozing</h2>
+    <p>So'rovingiz to'g'ridan-to'g'ri menga Telegramda keladi. Odatda shu kun ichida javob beraman.</p>
+    <p class="clock" id="clock"></p>
+    <div class="links" id="links"></div>
+  </div>
+  <form id="form" novalidate>
+    <label>Ismingiz<input name="name" required maxlength="80" autocomplete="name"></label>
+    <div class="row">
+      <label>Yoshingiz<input name="age" type="number" min="5" max="100" inputmode="numeric" placeholder="masalan, 20"></label>
+      <label>Gmail<input name="email" type="email" maxlength="100" placeholder="ism@gmail.com" autocomplete="email"></label>
+    </div>
+    <div class="row">
+      <label>Viloyat<input name="region" maxlength="60" placeholder="masalan, Samarqand" autocomplete="address-level1"></label>
+      <label>Tuman<input name="district" maxlength="60" placeholder="masalan, Urgut" autocomplete="address-level2"></label>
+    </div>
+    <label>Hozir o'qiysizmi?
+      <select name="studying" id="studying"><option value="">Tanlang</option><option value="Ha">Ha, o'qiyman</option><option value="Yo'q">Yo'q</option></select>
+    </label>
+    <label id="dirWrap" hidden>O'qish yo'nalishingiz<input name="direction" maxlength="100" placeholder="masalan, Axborot tizimlari"></label>
+    <label>Telegram username yoki telefon<input name="contact" required maxlength="80" placeholder="@username yoki +998..." autocomplete="off"></label>
+    <label>Xabar<textarea name="message" rows="5" required maxlength="2000"></textarea></label>
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" type="submit">Yuborish</button>
+    <p id="status" role="status"></p>
+  </form>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Javohir Jamoliddinov · <button class="linkbtn" id="share" type="button">Saytni ulashish</button></footer>
+<div class="pal" id="pal" hidden>
+  <div class="pal-box" role="dialog" aria-modal="true" aria-label="Tezkor qidiruv">
+    <input id="palq" autocomplete="off" spellcheck="false" placeholder="Qayerga o'tamiz? (masalan: loyihalar)" aria-label="Qidiruv">
+    <ul id="pall" role="listbox"></ul>
+    <p class="pal-h"><kbd>↑</kbd><kbd>↓</kbd> tanlash · <kbd>Enter</kbd> ochish · <kbd>Esc</kbd> yopish</p>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<button class="totop" id="totop" type="button" aria-label="Yuqoriga">↑</button>
+<script src="assets/main.js"></script>
+<script src="assets/fx.js"></script>
+</body>
+</html>
